@@ -11,8 +11,8 @@
  *  and limitations under the License.
  */
 
-import { CfnJobProps } from '@aws-cdk/aws-glue';
-import { IRole } from '@aws-cdk/aws-iam';
+import { CfnJobProps } from 'aws-cdk-lib/aws-glue';
+import { IRole } from 'aws-cdk-lib/aws-iam';
 
 export function DefaultGlueJobProps(jobRole: IRole, userProvidedGlueJobProps: CfnJobProps,
   glueSecurityConfigName: string, defaultArguments: {}): CfnJobProps {

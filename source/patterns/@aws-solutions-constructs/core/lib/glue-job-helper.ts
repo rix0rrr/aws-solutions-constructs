@@ -11,10 +11,11 @@
  *  and limitations under the License.
  */
 
-import * as glue from '@aws-cdk/aws-glue';
-import { Effect, IRole, Policy, PolicyStatement, Role, ServicePrincipal } from '@aws-cdk/aws-iam';
-import { Bucket, BucketProps, IBucket } from '@aws-cdk/aws-s3';
-import { Aws, Construct, IResolvable } from '@aws-cdk/core';
+import { Construct } from 'constructs';
+import * as glue from 'aws-cdk-lib/aws-glue';
+import { Effect, IRole, Policy, PolicyStatement, Role, ServicePrincipal } from 'aws-cdk-lib/aws-iam';
+import { Bucket, BucketProps, IBucket } from 'aws-cdk-lib/aws-s3';
+import { Aws, IResolvable } from 'aws-cdk-lib';
 import * as defaults from '../';
 import { overrideProps } from './utils';
 
